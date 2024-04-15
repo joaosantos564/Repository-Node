@@ -4,6 +4,7 @@ import { router } from "./routes/index.routes.js";
 
 config();
 
+
 const port = process.env.PORT || 5000;
 
 const app = express();
