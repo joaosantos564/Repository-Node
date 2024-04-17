@@ -11,7 +11,7 @@ try{
   // console.log(allUsers);
    return allUsers;
 } catch (error){
-  console.error("Failed to get all users", error);
+  //console.error("Failed to get all users", error);
   throw error;
 }
   }
@@ -24,7 +24,7 @@ try{
     console.log(user);
     return user;
    } catch (error){
-    console.error("Failed to get all users by Id", error);
+   // console.error("Failed to get all users by Id", error);
     throw error;
    }
   }
@@ -37,7 +37,7 @@ try{
       );
       return user;
      } catch (error){
-      console.error("Failed to get emails", error);
+      //console.error("Failed to get emails", error);
       throw error;
      }
   }
@@ -50,7 +50,7 @@ try{
        );
         return user;
      } catch (error){
-      console.error("Failed to create users", error);
+     // console.error("Failed to create users", error);
       throw error;
      }
   }
@@ -70,7 +70,7 @@ try{
   
       return updateUser;
      } catch (error){
-      console.error("Failed to edit users", error);
+     // console.error("Failed to edit users", error);
       throw error;
      }
   }
@@ -79,7 +79,7 @@ try{
    try{
     await this.pg.none("DELETE FROM users WHERE id = $1", id);
    } catch (error){
-    console.error("Failed to Delete users", error);
+    //console.error("Failed to Delete users", error);
     throw error;
    }
   }
